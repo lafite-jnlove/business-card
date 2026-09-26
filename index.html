@@ -237,8 +237,6 @@ body{
 </p>
 
 
-<!-- ABOUT -->
-
 <div class="section">
 
 <div class="section-title">
@@ -270,8 +268,6 @@ ABOUT LAFITE｜關於我
 
 </div>
 
-
-<!-- SERVICES -->
 
 <div class="section">
 
@@ -312,8 +308,6 @@ EVENT｜活動主持
 </div>
 
 
-<!-- BRANDS -->
-
 <div class="section">
 
 <div class="section-title">
@@ -353,8 +347,6 @@ JNLove Event
 
 </div>
 
-
-<!-- CONTACT -->
 
 <div class="section">
 
@@ -405,8 +397,6 @@ lafitehsieh@jnloveimc.com
 </div>
 
 
-<!-- ACTION BUTTONS -->
-
 <div class="buttons">
 
 <button
@@ -448,7 +438,8 @@ JNLOVE · EVERY MOMENT DESERVES TO BE REMEMBERED.<br>
 
 <script>
 
-const LIFF_ID = "2011754552-snXk04s7";
+const LIFF_ID =
+"2011754552-snXk04s7";
 
 const LIFF_URL =
 "https://liff.line.me/2011754552-snXk04s7";
@@ -505,226 +496,579 @@ async function shareCard(){
     }
 
 
-    await liff.shareTargetPicker([
+    /*
+      三頁左右滑動電子名片
+    */
 
-      {
+    await liff.shareTargetPicker(
 
-        type:"flex",
+      [
 
-        altText:
-        "Lafite 羽喬｜活動・婚禮主持人電子名片",
+        /* =========================
+           第一頁｜Lafite 主視覺
+        ========================= */
 
-        contents:{
+        {
 
-          type:"bubble",
+          type:"flex",
 
+          altText:
+          "Lafite 羽喬｜活動・婚禮主持人",
 
-          hero:{
+          contents:{
 
-            type:"image",
-
-            url:HERO_IMAGE,
-
-            size:"full",
-
-            aspectRatio:"3:4",
-
-            aspectMode:"cover",
-
-            action:{
-
-              type:"uri",
-
-              uri:LIFF_URL
-
-            }
-
-          },
-
-
-          body:{
-
-            type:"box",
-
-            layout:"vertical",
-
-            spacing:"md",
+            type:"carousel",
 
             contents:[
 
               {
 
-                type:"text",
+                type:"bubble",
 
-                text:"Lafite 羽喬",
+                size:"giga",
 
-                weight:"bold",
+                hero:{
 
-                size:"xl",
+                  type:"image",
 
-                color:"#321011"
+                  url:HERO_IMAGE,
 
-              },
+                  size:"full",
 
-              {
+                  aspectRatio:"3:4",
 
-                type:"text",
+                  aspectMode:"cover",
 
-                text:"Wedding & Event Host",
+                  action:{
 
-                size:"sm",
+                    type:"uri",
 
-                color:"#9A7041"
+                    uri:LIFF_URL
 
-              },
+                  }
 
-              {
+                },
 
-                type:"text",
+                body:{
 
-                text:"活動／婚禮主持人",
+                  type:"box",
 
-                size:"sm",
+                  layout:"vertical",
 
-                color:"#765250",
+                  spacing:"md",
 
-                margin:"sm"
+                  contents:[
 
-              },
+                    {
 
-              {
+                      type:"text",
 
-                type:"separator",
+                      text:"Lafite 羽喬",
 
-                margin:"md"
+                      weight:"bold",
 
-              },
+                      size:"xl",
 
-              {
+                      color:"#321011"
 
-                type:"text",
+                    },
 
-                text:
-                "千場婚禮 × 活動主持經驗",
+                    {
 
-                weight:"bold",
+                      type:"text",
 
-                size:"md",
+                      text:"Wedding & Event Host",
 
-                color:"#9A7041",
+                      size:"sm",
 
-                margin:"md",
+                      color:"#9A7041"
 
-                wrap:true
+                    },
 
-              },
+                    {
 
-              {
+                      type:"text",
 
-                type:"text",
+                      text:"活動／婚禮主持人",
 
-                text:
-                "自 2008 年投入主持工作至今",
+                      size:"sm",
 
-                size:"sm",
+                      color:"#765250",
 
-                color:"#765250",
+                      margin:"sm"
 
-                margin:"sm",
+                    },
 
-                wrap:true
+                    {
 
-              },
+                      type:"separator",
 
-              {
+                      margin:"md"
 
-                type:"text",
+                    },
 
-                text:
-                "讓每一場重要時刻，都被好好說進故事裡。",
+                    {
 
-                size:"sm",
+                      type:"text",
 
-                color:"#555555",
+                      text:
+                      "千場婚禮 × 活動主持經驗",
 
-                wrap:true,
+                      weight:"bold",
 
-                margin:"sm"
+                      size:"md",
 
-              }
+                      color:"#9A7041",
 
-            ]
+                      margin:"md",
 
-          },
+                      wrap:true
 
+                    },
 
-          footer:{
+                    {
 
-            type:"box",
+                      type:"text",
 
-            layout:"vertical",
+                      text:
+                      "自 2008 年投入主持工作至今",
 
-            spacing:"sm",
+                      size:"sm",
 
-            contents:[
+                      color:"#555555",
 
-              {
+                      margin:"sm",
 
-                type:"button",
+                      wrap:true
 
-                style:"primary",
+                    }
 
-                color:"#321011",
+                  ]
 
-                action:{
+                },
 
-                  type:"uri",
+                footer:{
 
-                  label:
-                  "查看完整電子名片",
+                  type:"box",
 
-                  uri:LIFF_URL
+                  layout:"vertical",
+
+                  contents:[
+
+                    {
+
+                      type:"button",
+
+                      style:"primary",
+
+                      color:"#321011",
+
+                      action:{
+
+                        type:"uri",
+
+                        label:"查看完整電子名片",
+
+                        uri:LIFF_URL
+
+                      }
+
+                    }
+
+                  ]
 
                 }
 
               },
 
+
+              /* =========================
+                 第二頁｜專業服務
+              ========================= */
+
               {
 
-                type:"button",
+                type:"bubble",
 
-                style:"link",
+                size:"giga",
 
-                action:{
+                body:{
 
-                  type:"uri",
+                  type:"box",
 
-                  label:
-                  "LINE 聯絡 Lafite",
+                  layout:"vertical",
 
-                  uri:
-                  "https://lin.ee/pPhhB6E"
+                  spacing:"md",
+
+                  paddingAll:"22px",
+
+                  contents:[
+
+                    {
+
+                      type:"text",
+
+                      text:"SERVICES",
+
+                      size:"sm",
+
+                      color:"#9A7041",
+
+                      weight:"bold"
+
+                    },
+
+                    {
+
+                      type:"text",
+
+                      text:"專業服務",
+
+                      size:"xxl",
+
+                      color:"#321011",
+
+                      weight:"bold"
+
+                    },
+
+                    {
+
+                      type:"text",
+
+                      text:
+                      "2008－至今",
+
+                      size:"sm",
+
+                      color:"#765250"
+
+                    },
+
+                    {
+
+                      type:"separator",
+
+                      margin:"md"
+
+                    },
+
+                    {
+
+                      type:"text",
+
+                      text:"婚禮服務",
+
+                      size:"lg",
+
+                      weight:"bold",
+
+                      color:"#9A7041",
+
+                      margin:"md"
+
+                    },
+
+                    {
+
+                      type:"text",
+
+                      text:
+                      "婚禮主持\n婚禮顧問・婚禮統籌",
+
+                      size:"sm",
+
+                      color:"#555555",
+
+                      wrap:true
+
+                    },
+
+                    {
+
+                      type:"text",
+
+                      text:"活動主持",
+
+                      size:"lg",
+
+                      weight:"bold",
+
+                      color:"#9A7041",
+
+                      margin:"md"
+
+                    },
+
+                    {
+
+                      type:"text",
+
+                      text:
+                      "商務／企業活動\n典禮儀式・晚宴餐會\n年會・研討會・春酒尾牙\n記者會・發表會\n各類型專業活動",
+
+                      size:"sm",
+
+                      color:"#555555",
+
+                      wrap:true
+
+                    }
+
+                  ]
+
+                },
+
+                footer:{
+
+                  type:"box",
+
+                  layout:"vertical",
+
+                  contents:[
+
+                    {
+
+                      type:"button",
+
+                      style:"primary",
+
+                      color:"#321011",
+
+                      action:{
+
+                        type:"uri",
+
+                        label:"查看完整介紹",
+
+                        uri:LIFF_URL
+
+                      }
+
+                    }
+
+                  ]
 
                 }
 
               },
 
+
+              /* =========================
+                 第三頁｜品牌＋聯絡
+              ========================= */
+
               {
 
-                type:"text",
+                type:"bubble",
 
-                text:
-                "JNLOVE · EVERY MOMENT DESERVES TO BE REMEMBERED.",
+                size:"giga",
 
-                size:"xxs",
+                body:{
 
-                color:"#A98D84",
+                  type:"box",
 
-                align:"center",
+                  layout:"vertical",
 
-                wrap:true,
+                  spacing:"md",
 
-                margin:"md"
+                  paddingAll:"22px",
+
+                  contents:[
+
+                    {
+
+                      type:"text",
+
+                      text:"JNLOVE",
+
+                      size:"sm",
+
+                      color:"#9A7041",
+
+                      weight:"bold"
+
+                    },
+
+                    {
+
+                      type:"text",
+
+                      text:"品牌服務",
+
+                      size:"xxl",
+
+                      color:"#321011",
+
+                      weight:"bold"
+
+                    },
+
+                    {
+
+                      type:"separator",
+
+                      margin:"md"
+
+                    },
+
+                    {
+
+                      type:"text",
+
+                      text:"喬藝有囍",
+
+                      size:"lg",
+
+                      weight:"bold",
+
+                      color:"#321011",
+
+                      margin:"md"
+
+                    },
+
+                    {
+
+                      type:"text",
+
+                      text:
+                      "JNLove Wedding\n一站式婚宴整合服務",
+
+                      size:"sm",
+
+                      color:"#555555",
+
+                      wrap:true
+
+                    },
+
+                    {
+
+                      type:"text",
+
+                      text:"喬藝樂薈",
+
+                      size:"lg",
+
+                      weight:"bold",
+
+                      color:"#321011",
+
+                      margin:"md"
+
+                    },
+
+                    {
+
+                      type:"text",
+
+                      text:
+                      "JNLove Event\n全方位活動解決方案",
+
+                      size:"sm",
+
+                      color:"#555555",
+
+                      wrap:true
+
+                    },
+
+                    {
+
+                      type:"separator",
+
+                      margin:"md"
+
+                    },
+
+                    {
+
+                      type:"text",
+
+                      text:"0958-900920",
+
+                      size:"md",
+
+                      weight:"bold",
+
+                      color:"#765250",
+
+                      margin:"md"
+
+                    },
+
+                    {
+
+                      type:"text",
+
+                      text:
+                      "lafitehsieh@jnloveimc.com",
+
+                      size:"sm",
+
+                      color:"#555555",
+
+                      wrap:true
+
+                    }
+
+                  ]
+
+                },
+
+                footer:{
+
+                  type:"box",
+
+                  layout:"vertical",
+
+                  spacing:"sm",
+
+                  contents:[
+
+                    {
+
+                      type:"button",
+
+                      style:"primary",
+
+                      color:"#321011",
+
+                      action:{
+
+                        type:"uri",
+
+                        label:"查看完整電子名片",
+
+                        uri:LIFF_URL
+
+                      }
+
+                    },
+
+                    {
+
+                      type:"button",
+
+                      style:"link",
+
+                      action:{
+
+                        type:"uri",
+
+                        label:"LINE 聯絡 Lafite",
+
+                        uri:
+                        "https://lin.ee/pPhhB6E"
+
+                      }
+
+                    }
+
+                  ]
+
+                }
 
               }
 
@@ -734,13 +1078,15 @@ async function shareCard(){
 
         }
 
+      ],
+
+      {
+
+        isMultiple:true
+
       }
 
-    ],{
-
-      isMultiple:true
-
-    });
+    );
 
 
   }catch(err){
