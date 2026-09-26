@@ -39,6 +39,7 @@ body{
   letter-spacing:.18em;
   color:#d9bd8f;
   font-size:13px;
+  text-transform:uppercase;
 }
 
 .name{
@@ -56,11 +57,29 @@ body{
 .lead{
   font-size:18px;
   line-height:1.75;
-  margin:0 0 28px;
+  margin:0 0 34px;
 }
 
 .lead b{
   color:#e1c08f;
+}
+
+.section{
+  margin-top:36px;
+}
+
+.section-title{
+  font-family:Georgia,"Noto Sans TC",serif;
+  color:#d9bd8f;
+  font-size:14px;
+  letter-spacing:.15em;
+  margin-bottom:15px;
+}
+
+.about{
+  color:#eadfd7;
+  line-height:1.9;
+  font-size:15px;
 }
 
 .card{
@@ -83,9 +102,61 @@ body{
 }
 
 .desc{
-  line-height:1.7;
+  line-height:1.8;
   color:#eadfd7;
   margin:12px 0 0;
+  font-size:15px;
+}
+
+.service-group{
+  margin-top:18px;
+}
+
+.service-name{
+  color:#e1c08f;
+  font-weight:700;
+  margin-bottom:8px;
+}
+
+.service-list{
+  color:#eadfd7;
+  line-height:1.9;
+  font-size:15px;
+}
+
+.contact{
+  border-top:1px solid rgba(217,189,143,.35);
+  border-bottom:1px solid rgba(217,189,143,.35);
+  padding:20px 0;
+}
+
+.contact-row{
+  padding:10px 0;
+}
+
+.contact-label{
+  color:#d9bd8f;
+  font-size:12px;
+  letter-spacing:.1em;
+  margin-bottom:4px;
+}
+
+.contact-value{
+  color:#f7efe6;
+  font-size:16px;
+  line-height:1.6;
+}
+
+.contact-value a{
+  color:#f7efe6;
+  text-decoration:none;
+}
+
+.company{
+  margin-top:22px;
+  color:#eadfd7;
+  line-height:1.8;
+  font-size:14px;
 }
 
 .buttons{
@@ -112,6 +183,12 @@ body{
   color:#260708;
 }
 
+.phone{
+  background:transparent;
+  border:1px solid #d5b57e;
+  color:#f5e5c8;
+}
+
 .line{
   background:#06c755;
   color:white;
@@ -126,9 +203,15 @@ body{
 .foot{
   text-align:center;
   color:#a98d84;
-  font-size:12px;
-  margin-top:30px;
+  font-size:11px;
+  margin-top:34px;
   letter-spacing:.08em;
+  line-height:1.7;
+}
+
+@media(max-width:420px){
+  .name{font-size:34px}
+  .content{padding:27px 21px 38px}
 }
 </style>
 </head>
@@ -153,193 +236,528 @@ body{
 都被好好說進故事裡。
 </p>
 
+
+<!-- ABOUT -->
+
+<div class="section">
+
+<div class="section-title">
+ABOUT LAFITE｜關於我
+</div>
+
+<div class="about">
+
+<p>
+自 2008 年投入主持工作至今，
+為各社團機關、公司行號、星級飯店及婚宴會館指定合作主持。
+</p>
+
+<p>
+主持風格細膩大氣、富含溫度，
+兼具理性與感性的多元表現。
+依不同場合與活動主軸，
+既可端莊優雅，亦能活潑熱情。
+</p>
+
+<p>
+以深具感染力的聲線與細膩敘事，
+將每個獨一無二的故事娓娓道來，
+引領聆聽者沉浸其中，
+深受新人、業主及合作夥伴肯定與信賴。
+</p>
+
+</div>
+
+</div>
+
+
+<!-- SERVICES -->
+
+<div class="section">
+
+<div class="section-title">
+SERVICES｜專業服務
+</div>
+
 <div class="card">
+
+<div class="service-group">
+
+<div class="service-name">
+WEDDING｜婚禮服務
+</div>
+
+<div class="service-list">
+婚禮主持・婚禮顧問・婚禮統籌
+</div>
+
+</div>
+
+<div class="service-group">
+
+<div class="service-name">
+EVENT｜活動主持
+</div>
+
+<div class="service-list">
+活動主持・商務／企業活動・典禮儀式<br>
+晚宴餐會・年會・研討會・春酒尾牙<br>
+記者會・發表會・各類型專業活動
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- BRANDS -->
+
+<div class="section">
+
+<div class="section-title">
+BRANDS｜品牌服務
+</div>
+
+<div class="card">
+
 <h2>喬藝有囍</h2>
-<div class="en">JNLove Wedding</div>
+
+<div class="en">
+JNLove Wedding
+</div>
+
 <p class="desc">
 一站式婚宴整合服務<br>
 婚禮顧問・婚宴企劃・禮俗諮詢
 </p>
+
 </div>
 
+
 <div class="card">
+
 <h2>喬藝樂薈</h2>
-<div class="en">JNLove Event</div>
+
+<div class="en">
+JNLove Event
+</div>
+
 <p class="desc">
 全方位活動解決方案<br>
 活動策劃・整合統籌・商業設計
 </p>
+
 </div>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<div class="section">
+
+<div class="section-title">
+CONTACT｜聯絡 Lafite
+</div>
+
+<div class="contact">
+
+<div class="contact-row">
+
+<div class="contact-label">
+MOBILE
+</div>
+
+<div class="contact-value">
+<a href="tel:+886958900920">
+0958-900920
+</a>
+</div>
+
+</div>
+
+
+<div class="contact-row">
+
+<div class="contact-label">
+E-MAIL
+</div>
+
+<div class="contact-value">
+<a href="mailto:lafitehsieh@jnloveimc.com">
+lafitehsieh@jnloveimc.com
+</a>
+</div>
+
+</div>
+
+<div class="company">
+
+<strong>喬藝傳播行銷有限公司</strong><br>
+統一編號｜60370852
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ACTION BUTTONS -->
 
 <div class="buttons">
 
-<button class="btn share" type="button" onclick="shareCard()">
+<button
+class="btn share"
+type="button"
+onclick="shareCard()">
 分享我的電子名片
 </button>
 
-<a class="btn line" href="https://lin.ee/pPhhB6E">
+<a
+class="btn phone"
+href="tel:+886958900920">
+電話聯絡 Lafite
+</a>
+
+<a
+class="btn line"
+href="https://lin.ee/pPhhB6E">
 LINE 聯絡我
 </a>
 
-<a class="btn fb"
+<a
+class="btn fb"
 href="https://www.facebook.com/share/1C5XHTRY73/?mibextid=wwXIfr">
 Facebook
 </a>
 
 </div>
 
+
 <div class="foot">
-JNLOVE · EVERY MOMENT DESERVES TO BE REMEMBERED.
+JNLOVE · EVERY MOMENT DESERVES TO BE REMEMBERED.<br>
+© 喬藝傳播行銷有限公司
 </div>
 
 </section>
 </main>
 
+
 <script>
 
 const LIFF_ID = "2011754552-snXk04s7";
-const LIFF_URL = "https://liff.line.me/2011754552-snXk04s7";
-const HERO_IMAGE = "https://lafite-jnlove.github.io/business-card/lafite.jpg";
+
+const LIFF_URL =
+"https://liff.line.me/2011754552-snXk04s7";
+
+const HERO_IMAGE =
+"https://lafite-jnlove.github.io/business-card/lafite.jpg";
+
 
 async function initLiff(){
+
   try{
-    await liff.init({liffId: LIFF_ID});
+
+    await liff.init({
+      liffId:LIFF_ID
+    });
+
   }catch(err){
-    console.error("LIFF init error", err);
+
+    console.error(
+      "LIFF init error",
+      err
+    );
+
   }
+
 }
+
 
 async function shareCard(){
 
   try{
 
     if(!liff.isLoggedIn()){
+
       liff.login();
+
       return;
+
     }
 
-    if(!liff.isApiAvailable("shareTargetPicker")){
-      alert("請從 LINE 開啟電子名片後再分享。");
+
+    if(
+      !liff.isApiAvailable(
+        "shareTargetPicker"
+      )
+    ){
+
+      alert(
+        "請從 LINE 開啟電子名片後再分享。"
+      );
+
       return;
+
     }
+
 
     await liff.shareTargetPicker([
+
       {
+
         type:"flex",
-        altText:"Lafite 羽喬｜活動・婚禮主持人電子名片",
+
+        altText:
+        "Lafite 羽喬｜活動・婚禮主持人電子名片",
 
         contents:{
+
           type:"bubble",
 
+
           hero:{
+
             type:"image",
+
             url:HERO_IMAGE,
+
             size:"full",
+
             aspectRatio:"3:4",
+
             aspectMode:"cover",
+
             action:{
+
               type:"uri",
+
               uri:LIFF_URL
+
             }
+
           },
 
+
           body:{
+
             type:"box",
+
             layout:"vertical",
+
             spacing:"md",
 
             contents:[
+
               {
+
                 type:"text",
+
                 text:"Lafite 羽喬",
+
                 weight:"bold",
+
                 size:"xl",
+
                 color:"#321011"
+
               },
+
               {
+
                 type:"text",
+
                 text:"Wedding & Event Host",
+
                 size:"sm",
+
                 color:"#9A7041"
+
               },
+
               {
+
                 type:"text",
+
                 text:"活動／婚禮主持人",
+
                 size:"sm",
+
                 color:"#765250",
+
                 margin:"sm"
+
               },
+
               {
+
                 type:"separator",
+
                 margin:"md"
+
               },
+
               {
+
                 type:"text",
-                text:"千場婚禮 × 活動主持經驗",
+
+                text:
+                "千場婚禮 × 活動主持經驗",
+
                 weight:"bold",
+
                 size:"md",
+
                 color:"#9A7041",
+
                 margin:"md",
+
                 wrap:true
+
               },
+
               {
+
                 type:"text",
-                text:"讓每一場重要時刻，都被好好說進故事裡。",
+
+                text:
+                "自 2008 年投入主持工作至今",
+
                 size:"sm",
+
+                color:"#765250",
+
+                margin:"sm",
+
+                wrap:true
+
+              },
+
+              {
+
+                type:"text",
+
+                text:
+                "讓每一場重要時刻，都被好好說進故事裡。",
+
+                size:"sm",
+
                 color:"#555555",
+
                 wrap:true,
+
                 margin:"sm"
+
               }
+
             ]
+
           },
 
+
           footer:{
+
             type:"box",
+
             layout:"vertical",
+
             spacing:"sm",
 
             contents:[
+
               {
+
                 type:"button",
+
                 style:"primary",
+
                 color:"#321011",
+
                 action:{
+
                   type:"uri",
-                  label:"查看電子名片",
+
+                  label:
+                  "查看完整電子名片",
+
                   uri:LIFF_URL
+
                 }
+
               },
+
               {
+
                 type:"button",
+
                 style:"link",
+
                 action:{
+
                   type:"uri",
-                  label:"LINE 聯絡 Lafite",
-                  uri:"https://lin.ee/pPhhB6E"
+
+                  label:
+                  "LINE 聯絡 Lafite",
+
+                  uri:
+                  "https://lin.ee/pPhhB6E"
+
                 }
+
               },
+
               {
+
                 type:"text",
-                text:"JNLOVE · EVERY MOMENT DESERVES TO BE REMEMBERED.",
+
+                text:
+                "JNLOVE · EVERY MOMENT DESERVES TO BE REMEMBERED.",
+
                 size:"xxs",
+
                 color:"#A98D84",
+
                 align:"center",
+
                 wrap:true,
+
                 margin:"md"
+
               }
+
             ]
+
           }
+
         }
+
       }
+
     ],{
+
       isMultiple:true
+
     });
 
+
   }catch(err){
-    console.error("分享失敗",err);
-    alert("分享沒有成功，請重新從 LINE 開啟電子名片再試一次。");
+
+    console.error(
+      "電子名片分享失敗",
+      err
+    );
+
+    alert(
+      "分享沒有成功，請重新從 LINE 開啟電子名片再試一次。"
+    );
+
   }
+
 }
+
 
 initLiff();
 
